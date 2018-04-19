@@ -1,9 +1,11 @@
-# HuxBlog Boilerplate
+## 个人博客
 
-##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
+用来记录平时的生活点滴或者技术杂感
 
-#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
+本人前端白痴，希望各位多提意见。
 
-#### [View Live Hux Blog &rarr;](http://huangxuan.me)
+同时，感谢[黄轩的博客Hux Blog](https://huangxuan.me/)提供的[模板](https://huangxuan.me/huxblog-boilerplate/)
 
-## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!
+我的联系方式: 
+Email: jianliu001922@gmail.com
+Wechat: take_it_away

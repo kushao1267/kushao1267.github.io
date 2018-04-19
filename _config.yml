@@ -1,22 +1,20 @@
 # Site settings
-title: Your Blog
+title: Jonliu Blog
 SEOTitle: Jonliu博客 | Jonliu Blog
 header-img: img/home-bg.jpg
 email: jonliu001922@gmail.com
-description: ""
+description: "记录生活、学习的点滴..."
 keyword: ""
 url: "https://kushao1267.github.io"              # your host, for absolute URL
-baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+weibo_username:     "刘小贱还是我zz"
+zhihu_username:     "liu-jian-52"
+github_username:    "kushao1267"
 
 
 
@@ -32,7 +30,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 
 
@@ -50,26 +48,15 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: jonliu
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
-
-
-# Analytics settings
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
-
-
-
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "爱新鲜技术，提升自己"
+sidebar-avatar: /img/avatar-jon.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -82,19 +69,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
+        title: "Yunson Blog",
+        href: "https://yunsonbai.top"
+    },
 ]

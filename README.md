@@ -7,5 +7,7 @@
 同时，感谢[黄轩的博客Hux Blog](https://huangxuan.me/)提供的[模板](https://huangxuan.me/huxblog-boilerplate/)
 
 我的联系方式: 
-Email: jianliu001922@gmail.com
-Wechat: take_it_away
+
+- Email: jianliu001922@gmail.com
+
+- Wechat: take_it_away

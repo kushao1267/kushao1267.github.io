@@ -14,4 +14,4 @@
 
 - Wechat：take_it_away
 
-![image](https://kushao1267.github.io/img/wetchat-qrcode.jpg)
+![image](img/wetchat-qrcode.jpg)

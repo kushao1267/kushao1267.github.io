@@ -12,7 +12,9 @@ tags:
 ## RabbitMQ的消息确认
 
 - 当消费者发回ack（nowledgement）告诉RabbitMQ已接受并处理了该消息，RabbitMQ则删除它。
+
 - 当消费者发回reject（Negative nowledgement）告诉RabbitMQ，RabbitMQ认为worker拒绝了消息，此时RabbitMQ会requeue该消息或者直接删除，但每次只能一条reject。
+
 - 当消费者发回nack（Negative nowledgement）与reject表现一致，但是支持批量。
 
 ## headers工作模式
@@ -24,6 +26,7 @@ header-exchange(头交换机)和topic-exchange(主题交换机)有点相似，�
 > 此外，使用OpenTracing的小伙伴还可以在headers中添加tracer数据，便于链路追踪。
 
 重试次数控制的代码示例:
+
 1.发布消息
 
 ```python

@@ -60,9 +60,11 @@ def on_message(channel: pika.adapters.blocking_connection.BlockingChannel,
 建议参考:
 
 - [异步消费者示例](https://github.com/pika/pika/blob/master/examples/asynchronous_consumer_example.py)
+
 - [异步发布者示例](https://github.com/pika/pika/blob/master/examples/asynchronous_publisher_example.py)
 
 ## 参考
 
 [1][RabbitMQ的消息确认参数](https://www.rabbitmq.com/nack.html)
+
 [2][官方代码示例](https://github.com/pika/pika/blob/master/examples)

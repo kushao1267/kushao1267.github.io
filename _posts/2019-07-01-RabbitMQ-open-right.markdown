@@ -65,6 +65,6 @@ def on_message(channel: pika.adapters.blocking_connection.BlockingChannel,
 
 ## 参考
 
-[1][RabbitMQ的消息确认参数](https://www.rabbitmq.com/nack.html)
+- [1][RabbitMQ的消息确认参数](https://www.rabbitmq.com/nack.html)
 
-[2][官方代码示例](https://github.com/pika/pika/blob/master/examples)
+- [2][官方代码示例](https://github.com/pika/pika/blob/master/examples)

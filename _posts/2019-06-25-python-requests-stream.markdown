@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "python requests的stream属性"
+title:      "Python requests库的stream属性"
 date:       2019-06-25 15:55:42
 author:     "Jonliu"
 header-img: "img/post-bg-2018.jpg"

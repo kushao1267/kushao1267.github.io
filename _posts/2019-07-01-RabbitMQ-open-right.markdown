@@ -11,9 +11,11 @@ tags:
 
 ## RabbitMQ的持久化
 
-1.设置Exchange
-2.MessageQueue的durable属性为true，可以使队列和Exchange持久化
-3.生产者在发送消息的时候，将delivery_mode设置为2（persistent）
+- 1.设置Exchange
+
+- 2.MessageQueue的durable属性为true，可以使队列和Exchange持久化
+
+- 3.生产者在发送消息的时候，将delivery_mode设置为2（persistent）
 
 ## RabbitMQ的事务机制
 

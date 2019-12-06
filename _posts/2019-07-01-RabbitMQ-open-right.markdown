@@ -5,8 +5,7 @@ date:       2019-07-01 14:11:42
 author:     "Jonliu"
 header-img: "img/post-bg-2018.jpg"
 tags:
-    - RabbitMQ
-    - Python
+    - System
 ---
 
 ## RabbitMQ的持久化

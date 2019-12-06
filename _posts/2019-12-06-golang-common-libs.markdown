@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "golang常用库及组件"
+title:      "golang常用组件库"
 date:       2019-12-06 10:00:43
 author:     "Jonliu"
 header-img: "img/post-bg-2018.jpg"

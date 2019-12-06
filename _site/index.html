@@ -131,7 +131,7 @@
                 <div class="site-heading">
                     <h1>Jonliu Blog</h1>
                     <!--<hr class="small">-->
-                    <span class="subheading">记录生活、学习的点滴...</span>
+                    <span class="subheading">Stay Conceited,Stay complacent.</span>
                 </div>
             </div>
         </div>
@@ -153,6 +153,151 @@
                 post-container
             ">
     			
+<div class="post-preview">
+    <a href="/2019/11/26/bloom-filter/">
+        <h2 class="post-title">
+            布隆过滤器理解及实现
+        </h2>
+        
+        <div class="post-content-preview">
+            优缺点
+
+  优点:
+    
+      空间效率和查询时间都远远超过一般的算法
+    
+  
+  缺点:
+    
+      缺点是有一定的误识别率和删除困难。
+    
+  
+
+
+应用场景
+
+  1.去重
+  2.避免缓存穿透
+
+
+实现原理
+BloomFiler又叫布隆过滤器，基本思想：
+
+  当一个元素被加入集合时，通过K个散列函数将这个元素映射成一个位数组中的K个点，把它们置为...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Jonliu on November 26, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/11/26/kafka-summary/">
+        <h2 class="post-title">
+            Kafka要点总结
+        </h2>
+        
+        <div class="post-content-preview">
+            Kafka介绍
+优点:
+
+  高吞吐: 单机10w+/s，高于其他消息中间件。
+  高容错：多副本(Replica)，允许单机宕机而不丢失数据。
+  高性能：顺序写、零拷贝、分片等特性。
+  高并发: Broker使用优化的reactor网络线程模型。
+
+
+应用场景:
+
+  需要异步、削峰、解耦等场景。
+  大数据、实时计算、日志分析等高吞吐量要求的场景。(但RabbitMQ消息延时更低)
+...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Jonliu on November 26, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/07/18/python-logging-summary/">
+        <h2 class="post-title">
+            Python标准库logging
+        </h2>
+        
+        <div class="post-content-preview">
+            0.logging库的结构
+
+1.线程锁
+logging模块可能被用于多线程中，模块中有许多全局变量，如果不加锁也会导致并发访问数据的安全问题。logging源码中表明：在使用多线程模块threading时，提供多线程重入锁的获取和释放方法_acquireLock, _releaseLock:
+
+try:
+    import threading
+except ImportError: #p...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Jonliu on July 18, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/07/01/RabbitMQ-open-right/">
+        <h2 class="post-title">
+            RabbitMQ踩坑总结
+        </h2>
+        
+        <div class="post-content-preview">
+            RabbitMQ的持久化
+
+
+  
+    1.设置Exchange
+  
+  
+    2.MessageQueue的durable属性为true，可以使队列和Exchange持久化
+  
+  
+    3.生产者在发送消息的时候，将delivery_mode设置为2（persistent）
+  
+
+
+RabbitMQ的事务机制
+
+在许多场景下，你不能丢失消息，包括producer发布到R...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Jonliu on July 1, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/06/25/python-requests-stream/">
+        <h2 class="post-title">
+            Python requests库的stream属性
+        </h2>
+        
+        <div class="post-content-preview">
+            Requsts stream属性介绍
+官方文档描述如下：
+
+  iter_content(chunk_size=1, decode_unicode=False)[source]
+
+
+Iterates over the response data. When stream=True is set on the request, this avoids reading the content a...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Jonliu on June 25, 2019
+    </p>
+</div>
+<hr>
+
 <div class="post-preview">
     <a href="/2018/04/19/python-tornado/">
         <h2 class="post-title">
@@ -204,6 +349,16 @@ epoll是Linux内核为处理大批量文件描述符而作了改进的poll，是
                     <div class="tags">
                         
                             
+                                <a href="/tags/#Python" title="Python" rel="3">
+                                    Python
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#System" title="System" rel="3">
+                                    System
+                                </a>
+                            
                         
                     </div>
                 </section>
@@ -217,7 +372,7 @@ epoll是Linux内核为处理大批量文件描述符而作了改进的poll，是
                             <img src="/img/avatar-jon.jpg" />
                         
                         
-                            <p>爱新鲜技术，提升自己</p>
+                            <p>Golang/Python爱好者，web后端开发工程师</p>
                         
                         <!-- SNS Link -->
                         <ul class="list-inline">
@@ -264,6 +419,8 @@ epoll是Linux内核为处理大批量文件描述符而作了改进的poll，是
                 <ul class="list-inline">
                     
                         <li><a href="https://yunsonbai.top">Yunson Blog</a></li>
+                    
+                        <li><a href="http://zhaojames0707.github.io/">James Blog</a></li>
                     
                 </ul>
                 
@@ -318,7 +475,7 @@ epoll是Linux内核为处理大批量文件描述符而作了改进的poll，是
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; Jonliu Blog 2018
+                    Copyright &copy; Jonliu Blog 2019
                     <br>
                     Theme by <a href="http://huangxuan.me">Hux</a> |
                     <iframe

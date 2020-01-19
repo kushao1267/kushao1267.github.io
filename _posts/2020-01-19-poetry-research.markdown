@@ -82,11 +82,11 @@ $ exit`
 最后，删除相关shell。一般Macos的路径是:`~/Library/Caches/pypoetry/virtualenvs`
 
 ## 相关参考:
-[1.不要用Pipenv](http://greyli.com/do-not-use-pipenv/)
-[2.相比 Pipenv，Poetry 是一个更好的选择](http://greyli.com/poetry-a-better-choice-than-pipenv/)
-[3.也谈「不要用 Pipenv」](https://zhuanlan.zhihu.com/p/80683249)
-[4.Frequently Encountered Pipenv Problems](https://pipenv-fork.readthedocs.io/en/latest/diagnose.html)
-[5.要不我们还是用回 virtualenv/venv 和 pip 吧](http://greyli.com/back-to-virtualenv-venv-and-pip/)
-[6.Pipenv and Poetry: Benchmarks & Ergonomics](https://johnfraney.ca/posts/2019/03/06/pipenv-poetry-benchmarks-ergonomics/)
+- [1.不要用Pipenv](http://greyli.com/do-not-use-pipenv/)
+- [2.相比 Pipenv，Poetry 是一个更好的选择](http://greyli.com/poetry-a-better-choice-than-pipenv/)
+- [3.也谈「不要用 Pipenv」](https://zhuanlan.zhihu.com/p/80683249)
+- [4.Frequently Encountered Pipenv Problems](https://pipenv-fork.readthedocs.io/en/latest/diagnose.html)
+- [5.要不我们还是用回 virtualenv/venv 和 pip 吧](http://greyli.com/back-to-virtualenv-venv-and-pip/)
+- [6.Pipenv and Poetry: Benchmarks & Ergonomics](https://johnfraney.ca/posts/2019/03/06/pipenv-poetry-benchmarks-ergonomics/)
 
 

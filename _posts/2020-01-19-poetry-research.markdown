@@ -15,7 +15,7 @@ tags:
 | | Poetry | Pipenv |
 | --- | --- | --- |
 | 对比版本 | 1.0.2 | 2018-11-26 |
-| 依赖文件名 | Pipfile, Pipefile.lock | pyproject.toml, poetry.lock |
+| 依赖文件名 | pyproject.toml, poetry.lock | Pipfile, Pipefile.lock |
 | 依赖文件语法 | TOML | TOML |
 | Python版本管理 | ✓ | ✓ |
 | requirements.txt导入 | ✗ | ✓ |

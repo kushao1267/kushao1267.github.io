@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Poetry调研与使用"
+title:      "项目升级Django版本"
 date:       2020-05-27 11:00:43
 author:     "Jonliu"
 header-img: "img/post-bg-2018.jpg"

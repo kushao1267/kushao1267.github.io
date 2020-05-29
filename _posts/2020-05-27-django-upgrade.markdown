@@ -36,6 +36,7 @@ tags:
 - base.py
 
 1.APPEND_SLASH=False 用于解决以'/'结尾的警告
+https://docs.djangoproject.com/en/3.0/releases/2.0.8/
 
 2.MIDDLEWARE_CLASS更名为MIDDLEWARE并且由tuple变为list.
 
@@ -47,13 +48,22 @@ tags:
 
 3.include("api.urls", namespace='api/v1') 变为include(("api.urls", "api/v1"), namespace='api/v1')
 
+4.实际上namespace可去掉，它的应用场景主要在于template渲染和reverse()函数反查url，目前没用。
+
 - models.py
 
-1.使用ForeignKey的field都需要加上on_delete属性，老版本默认为model.CASCADE
+1.使用ForeignKey的field都需要加上on_delete属性，老版本默认为model.CASCADE，由于数据库已经设置关闭constraint，所以均改为models.SET_NULL. 而models.SET_NULL需要blank=True, null=True以保证设置成功。
+
+2.Django原来使用Mysql的默认事务隔离级别:可重复读，现在默认为: 读提交级别。
+是由于Django models的设计思想就是Read commited的。
+Repeatable read之所以data loss的原因是：比如get_or_create()是先get发现无记录，然后create的时候遇到并发而失败了。然后再去get。结果由于读到的数据是事务开始的版本，所以还是返回None.
 
 - migrations.py
 
 1.删除，因为on_delete不兼容会报错，无法runserver
+
+2.在容器中运行`python manage.py makemigrations direct_message`生成新的迁移文件, 然后运行
+`python manage.py migrate direct_message --fake`假装对新生成的migrations文件进行apply，这样以后的数据库迁移还能继续关联到数据库。
 
 - serializer.py
 
@@ -63,3 +73,4 @@ tags:
 ## 四、收尾
 - 在容器中pipenv lock更新Pipfile.lock文件及requirements.txt文件
 - 本地运行feature分支，使用charles的mapRemote进行调试
+- test环境回测
